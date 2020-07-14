@@ -1,0 +1,23 @@
+.main-container {
+    width: auto;
+}
+
+.cell {
+    width: 70px;
+    height: 50px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.action-btns {
+    margin-bottom: 10px;
+}
+
+.player {
+    width: 100px;
+    height: 50px;
+} 
+
+.player-container {
+    margin-top: 10px;
+}
