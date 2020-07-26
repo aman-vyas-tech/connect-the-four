@@ -1,5 +1,6 @@
 var currentPlayer;
 var nextPlayer;
+var gameOver = false;
 var player1 = document.getElementById("player1");
 var player2 = document.getElementById("player2");
 var gridElement = document.getElementById('grid');
@@ -14,7 +15,11 @@ var column7 = ["06", "16", "26", "36", "46", "56"];
 
 function fillBall(column) {
   if (currentPlayer === undefined) {
-    alert("Please select any player first");
+    alert("Please select any player first or game is over");
+  }
+  else if(gameOver) {
+      alert("Game is over dude");
+      window.reload();
   } else {
     var targetCell = column[column.length - 1];
     column.pop();
@@ -66,7 +71,8 @@ function checkHorizontalWins() {
                   count++;
                   console.log(count, gridCells[i].innerHTML);
                   if(count === 3) {
-                      alert(`Player wins ${gridCells[i].innerHTML}`);
+                      gameOver = true;
+                      alert(`${gridCells[i].innerHTML} wins`);
                   }
               }
           }
