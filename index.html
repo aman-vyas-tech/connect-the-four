@@ -18,23 +18,23 @@
     <div class="container">
         <span>Connect the Four</span>
 
-        <div class="container main-container">
-            <div class="row action-btns">
-                <span class="action-btn cell col-md-1" id="one"   onclick="fillBall(event, column1)">One</span>
-                <span class="action-btn cell col-md-1" id="two"   onclick="fillBall(event, column2)">Two</span>
-                <span class="action-btn cell col-md-1" id="three" onclick="fillBall(event, column3)">Three</span>
-                <span class="action-btn cell col-md-1" id="four"  onclick="fillBall(event, column4)">Four</span>
-                <span class="action-btn cell col-md-1" id="five"  onclick="fillBall(event, column5)">Five</span>
-                <span class="action-btn cell col-md-1" id="six"   onclick="fillBall(event, column6)">Six</span>
-                <span class="action-btn cell col-md-1" id="seven" onclick="fillBall(event, column7)">Seven</span>
-            </div>
-
-            <div class="grid-container" id="grid"></div> 
-        </div>
-
         <div class="player-container">
             <button class="player" id="player1" onclick="setPlayer('player1')">Player1</button>
             <button class="player" id="player2" onclick="setPlayer('player2')">Player2</button>
+        </div>
+
+        <div class="container main-container">
+            <div class="row action-btns">
+                <span class="action-btn cell col-md-1" id="one"   onclick="fillBall(column1)">One</span>
+                <span class="action-btn cell col-md-1" id="two"   onclick="fillBall(column2)">Two</span>
+                <span class="action-btn cell col-md-1" id="three" onclick="fillBall(column3)">Three</span>
+                <span class="action-btn cell col-md-1" id="four"  onclick="fillBall(column4)">Four</span>
+                <span class="action-btn cell col-md-1" id="five"  onclick="fillBall(column5)">Five</span>
+                <span class="action-btn cell col-md-1" id="six"   onclick="fillBall(column6)">Six</span>
+                <span class="action-btn cell col-md-1" id="seven" onclick="fillBall(column7)">Seven</span>
+            </div>
+
+            <div class="grid-container" id="grid"></div> 
         </div>
     </div>
 
